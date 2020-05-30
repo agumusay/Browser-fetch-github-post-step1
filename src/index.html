@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+  </head>
+
+  <body>
+    <main class="container">
+      <form action="#">
+        <h2>Create a new repository</h2>
+        <div>
+          <label for="rname">Repository name</label>
+          <input type="text" id="rname" name="rname" value="" required />
+        </div>
+        <div>
+          <label for="description">Description (optional)</label>
+          <input type="text" id="description" name="description" value="" />
+        </div>
+        <div class="radios">
+          <div>
+            <input type="radio" id="public" name="repoType" value="public" />
+            <label for="public">Public</label>
+          </div>
+          <p>Anyone can see this repository. You choose who can commit.</p>
+          <div>
+            <input type="radio" id="privat" name="repoType" value="privat" />
+            <label for="privat">Privat</label>
+          </div>
+          <p>You choose who can see and commit to this repository.</p>
+          <div>
+            <input type="checkbox" id="other" name="readme" value="readme" />
+            <label for="other">Initialize this repository with a README</label>
+          </div>
+          <p>
+            This will let you immediately clone the repository to the computer.
+          </p>
+        </div>
+        <div class="footer">
+          <input class="submition1" type="reset" value="Cancel" />
+          <input class="submition2" type="submit" value="Create a repository" />
+          <div class="spinner notActive">
+            <div class="sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
